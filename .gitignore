@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+results/
+*.log
+!configs/*.json
+!dysts/data/*.json
+!dysts/data/*.npy

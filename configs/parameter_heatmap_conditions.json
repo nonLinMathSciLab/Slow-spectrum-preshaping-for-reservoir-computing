@@ -1,0 +1,37 @@
+{
+  "experiment_config": {
+    "FIRST_STEP_DT": 0.001,
+    "PTS_PER_PERIOD": 100,
+    "delay": 0,
+    "NUM_STEPS": 30000,
+    "DataStartTime": 0,
+    "embedding_dimension": 3,
+    "WARMUP_STEPS": 1000,
+    "TRAINING_TIME_STEPS": 2000,
+    "PREDICTION_STEPS": 5000,
+    "PRED_START_POINT": 0,
+    "PRED_START_POINT_END": 5000,
+    "OVER_NUM": 50,
+    "FORCE_COMPLEX_MODE": false,
+    "system_name": "Lorenz",
+    "sanity_check": true,
+    "test_GSPT": true,
+    "calc_only_ls": true,
+    "test_conditional_lyapunov": false,
+    "search_method": "grid",
+    "FIX_DT": null,
+    "gpu_mode": true,
+    "USE_DATA_LEN": 13000,
+    "lyapunov_time": 74.72288607462363,
+    "system": "Lorenz",
+    "dt": 0.015007999999999999
+  },
+  "plot_config": {
+    "mode_plot_stability": false,
+    "mode_plot_projection": false,
+    "mode_plot_distance": false,
+    "mode_plot_eigenvalue_distribution": false,
+    "mode_plot_fxp_eigenvalue_distribution": false,
+    "plot_results": false
+  }
+}

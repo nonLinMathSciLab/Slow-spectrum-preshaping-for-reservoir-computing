@@ -1,0 +1,216 @@
+{
+  "created_at": "2026-06-17T01:59:47.681591",
+  "figure": "fig_5_6",
+  "smoke": false,
+  "template_conditions_path": "/host_volume/open_src/results/fig_5_6_src_params_2026_06_01_17_25_24/experiment_conditions.json",
+  "w_in_method_run": "eigenvec",
+  "construct_option_run": "random",
+  "force_update_set": "template-pi64",
+  "force_angle_denominators": [
+    16,
+    32,
+    64
+  ],
+  "experiment_config": {
+    "FIRST_STEP_DT": 0.001,
+    "PTS_PER_PERIOD": 100,
+    "delay": 0,
+    "NUM_STEPS": 30000,
+    "DataStartTime": 0,
+    "embedding_dimension": 3,
+    "WARMUP_STEPS": 1000,
+    "TRAINING_TIME_STEPS": 2000,
+    "PREDICTION_STEPS": 5000,
+    "PRED_START_POINT": 0,
+    "PRED_START_POINT_END": 5000,
+    "OVER_NUM": 50,
+    "FORCE_COMPLEX_MODE": false,
+    "system_name": "Lorenz",
+    "sanity_check": true,
+    "test_GSPT": true,
+    "calc_only_ls": true,
+    "test_conditional_lyapunov": true,
+    "search_method": "grid",
+    "FIX_DT": null,
+    "gpu_mode": true,
+    "USE_DATA_LEN": 13000,
+    "lyapunov_time": 74.72288607462363,
+    "system": "Lorenz",
+    "dt": 0.015007999999999999
+  },
+  "plot_config": {
+    "mode_plot_stability": false,
+    "mode_plot_projection": false,
+    "mode_plot_distance": false,
+    "mode_plot_eigenvalue_distribution": false,
+    "mode_plot_fxp_eigenvalue_distribution": false,
+    "plot_results": false
+  },
+  "parameter_ranges": {
+    "partial_observe_list": [
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "w_res_method_list": [
+      "symmetry"
+    ],
+    "er_prob_list": [
+      1.0
+    ],
+    "W_res_force_updates_list": [
+      false,
+      [
+        [
+          0,
+          1.1
+        ],
+        [
+          1,
+          0.9090909090909091
+        ]
+      ],
+      [
+        [
+          0,
+          1.05
+        ],
+        [
+          1,
+          0.9523809523809523
+        ]
+      ],
+      [
+        [
+          0,
+          1.01
+        ],
+        [
+          1,
+          0.9900990099009901
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          {
+            "real": 0.9807852804032304,
+            "imag": 0.19509032201612825
+          }
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          {
+            "real": 0.9951847266721969,
+            "imag": 0.0980171403295606
+          }
+        ]
+      ],
+      [
+        [
+          [
+            0,
+            1
+          ],
+          {
+            "real": 0.9987954562051724,
+            "imag": 0.049067674327418015
+          }
+        ]
+      ]
+    ],
+    "w_in_method_list": [
+      "eigenvec"
+    ],
+    "use_eigenvecs_method_list": [
+      "high"
+    ],
+    "invariant_dim_list": [
+      3
+    ],
+    "conj_pair_num_list": [
+      "auto"
+    ],
+    "construct_option_list": [
+      "random"
+    ],
+    "input_scaling_ratio_list": [
+      1.0
+    ],
+    "input_sparsity_list": [
+      1.0
+    ],
+    "bias_method_list": [
+      "const"
+    ],
+    "seed_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "bias_amplitude_list": [
+      0.01
+    ],
+    "alpha_list": [
+      1.0
+    ],
+    "dim_reservoir_list": [
+      300
+    ],
+    "spectral_radius_list": [
+      0.1,
+      0.3,
+      0.5,
+      0.7,
+      0.9
+    ],
+    "regularization_list": [
+      0.0
+    ],
+    "is_intercept_list": [
+      false
+    ],
+    "how_loop_list": [
+      "output=input"
+    ],
+    "how_train_list": [
+      "lstsq"
+    ]
+  },
+  "notes": [
+    "Parameter ranges are loaded from the template experiment_conditions.json.",
+    "construct_option_list is overridden by --construct-option.",
+    "W_res_force_updates_list is selected by --force-update-set.",
+    "w_in_method_list is overridden so eigenvec and random runs can be stored separately.",
+    "ESN train/predict calculations are CPU NumPy; Lyapunov reduced-QR calculations use CuPy when gpu_mode=True.",
+    "RC LE and CLE plots show four estimated exponents; True LE reference lines show the system spectrum."
+  ]
+}

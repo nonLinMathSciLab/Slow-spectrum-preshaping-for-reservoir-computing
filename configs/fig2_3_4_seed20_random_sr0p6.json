@@ -1,0 +1,28 @@
+{
+  "figure": "Fig2_3_4",
+  "description": "Paper run used for Fig. 2-4 style outputs.",
+  "variants": [
+    "original_eigenvec",
+    "forced_eigenvec",
+    "random_input"
+  ],
+  "seed_values": "range(20)",
+  "construct_option": "random",
+  "spectral_radius": 0.6,
+  "steps_ahead": 2000,
+  "forced_eigenvalue": {
+    "W_res_force_updates": [
+      [
+        [
+          0,
+          1
+        ],
+        {
+          "real": 0.9951847266721969,
+          "imag": 0.0980171403295606,
+          "formula": "exp(i*pi/32)"
+        }
+      ]
+    ]
+  }
+}
