@@ -228,7 +228,7 @@ existing per-seed CSV files without rerunning the experiments.
 ## Third-Party Data
 
 The `dysts/` directory includes a minimal subset of data derived from the
-Dysts project by William Gilpin / GilpinLab.  The full Dysts package is not
+Dysts project by [William Gilpin / GilpinLab](https://github.com/GilpinLab/dysts).  The full Dysts package is not
 vendored here; only the metadata and cached trajectories needed for this
 paper's heatmap are included.  See `THIRD_PARTY_NOTICES.md` and
 `dysts/LICENSE.md` for attribution and license details.
